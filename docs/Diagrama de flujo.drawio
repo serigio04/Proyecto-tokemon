@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2024-09-03T04:43:48.671Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="ikEzKcQ9BrHs1W4GqbSQ" version="21.6.5" type="device">
+  <diagram name="Página-1" id="MuBH8wLhvvqqVK1Bwo2C">
+    <mxGraphModel dx="830" dy="486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-2" value="proyecto pokemon" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="480" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-3" value="user" style="swimlane;startSize=20;html=1;" vertex="1" parent="7Lu6kwWlvsS2cTSLwSKm-2">
+          <mxGeometry y="20" width="160" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="7Lu6kwWlvsS2cTSLwSKm-3" source="7Lu6kwWlvsS2cTSLwSKm-6" target="7Lu6kwWlvsS2cTSLwSKm-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-6" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="7Lu6kwWlvsS2cTSLwSKm-3">
+          <mxGeometry x="70" y="40" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="7Lu6kwWlvsS2cTSLwSKm-3" source="7Lu6kwWlvsS2cTSLwSKm-8" target="7Lu6kwWlvsS2cTSLwSKm-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-8" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Crear jugador&lt;/font&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="7Lu6kwWlvsS2cTSLwSKm-3">
+          <mxGeometry x="32.5" y="80" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-12" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Elegir pokemon inicial&lt;/font&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="7Lu6kwWlvsS2cTSLwSKm-3">
+          <mxGeometry x="32.5" y="120" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-4" value="system" style="swimlane;startSize=20;html=1;" vertex="1" parent="7Lu6kwWlvsS2cTSLwSKm-2">
+          <mxGeometry x="160" y="20" width="160" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="7Lu6kwWlvsS2cTSLwSKm-5" value="pokemon" style="swimlane;startSize=20;html=1;" vertex="1" parent="7Lu6kwWlvsS2cTSLwSKm-2">
+          <mxGeometry x="320" y="20" width="160" height="460" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
