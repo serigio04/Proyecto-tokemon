@@ -1,20 +1,20 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" modified="2024-09-15T22:53:55.484Z" etag="YB12vRziuOYCgX8QKy_3" version="21.6.5" type="device">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" modified="2024-09-15T23:07:09.518Z" etag="f2JRY2ojE32PNA8qGHjk" version="21.6.5" type="device">
   <diagram name="Página-1" id="ZHh0fnhvGAasHRaUsSyL">
     <mxGraphModel dx="1038" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="aBQ4uVxHKXS4e8t9MyZw-1" value="Pokemon" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="334" y="90" width="160" height="180" as="geometry" />
+          <mxGeometry x="334" y="90" width="160" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="aBQ4uVxHKXS4e8t9MyZw-2" value="+ Nombre&lt;div&gt;+ Nivel&lt;/div&gt;&lt;div&gt;+ Vida&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="aBQ4uVxHKXS4e8t9MyZw-1" vertex="1">
-          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        <mxCell id="aBQ4uVxHKXS4e8t9MyZw-2" value="+ Numero Pokedex&lt;br&gt;+ Nombre&lt;div&gt;+ Nivel&lt;/div&gt;&lt;div&gt;+ Vida&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="aBQ4uVxHKXS4e8t9MyZw-1" vertex="1">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
         </mxCell>
         <mxCell id="aBQ4uVxHKXS4e8t9MyZw-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="aBQ4uVxHKXS4e8t9MyZw-1" vertex="1">
-          <mxGeometry y="80" width="160" height="8" as="geometry" />
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="aBQ4uVxHKXS4e8t9MyZw-4" value="+ Atacar()&lt;div&gt;+ RecibirDaño()&lt;/div&gt;&lt;div&gt;+ Curarse()&lt;/div&gt;&lt;div&gt;+ Huir()&lt;/div&gt;&lt;div&gt;+ Ganar experiencia ()&lt;/div&gt;&lt;div&gt;+ Evolucionar()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="aBQ4uVxHKXS4e8t9MyZw-1" vertex="1">
-          <mxGeometry y="88" width="160" height="92" as="geometry" />
+          <mxGeometry y="98" width="160" height="92" as="geometry" />
         </mxCell>
         <mxCell id="aBQ4uVxHKXS4e8t9MyZw-5" value="Fuego" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="190" width="160" height="60" as="geometry" />
