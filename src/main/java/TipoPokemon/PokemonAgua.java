@@ -6,7 +6,7 @@ public class PokemonAgua extends Pokemon{
         super(numPokedex, nombre, vida, experiencia, nivel);
     }
 
-    public void ataqueFuego(double vida){
+    public void ataqueAgua(double vida){
         this.vida -= 2;
         System.out.println( this.nombre + " ha recibido un ataque");
     }
