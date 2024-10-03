@@ -9,13 +9,15 @@ public abstract class Pokemon {
     protected double vida;
     protected double experiencia;
     protected int nivel;
+    double dañoBase;
+    double xpBase;
 
     public Pokemon (int numPokedex, String nombre, double vida, double experiencia, int nivel){
         this.numPokedex = numPokedex;
         this.nombre = nombre;
-        this.vida = vida;
-        this.experiencia = experiencia;
-        this.vida = vida;
+        this.vida = 10;
+        this.experiencia = 0;
+        this.nivel = 1;
     }
 
 // Métodos get
@@ -60,4 +62,41 @@ public abstract class Pokemon {
         this.nivel = nivel;
     }
 
+    public void atacar(){
+        System.out.println(this.nombre + " ataca!");
+        dañoBase = Math.random()*(5-1)+1;
+    }
+
+    public void recibirDaño() {
+        this.vida = vida - dañoBase;
+    }
+
+    public void curarse(){
+        this.vida += vida*1.2;
+    }
+
+    public void huir(){
+        System.out.println("Tu y " + this.nombre + " han huido. \n La batalla ha terminado.");
+    }
+
+    public void ganarExperiencia(){
+        this.experiencia += vida/3; 
+    }
+
+    public void subirNivel(){
+        this.nivel++;
+        this.vida = vida+vida/2.5;
+        xpBase = 15;
+        this.experiencia = experiencia + xpBase;
+    }
+
+    public void evolucionar(){
+        if(this.nivel==16){
+            System.out.println(this.nombre + " quiere evolucionar");
+        }else{
+            if(this.nivel==35){
+                System.out.println(this.nombre + " quiere evolucionar");
+            }
+        }
+    }
 }
