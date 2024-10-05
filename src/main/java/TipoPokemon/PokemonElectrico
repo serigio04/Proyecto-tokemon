@@ -1,0 +1,84 @@
+public class PokemonElectrico {
+    // Atributos
+    private String nombre;
+    private int nivel;
+    private int puntosDeVida; // HP
+    private int energia; // Energía para ataques especiales
+    private boolean paralizado;
+
+    // Constructor
+    public PokemonElectrico(String nombre, int nivel, int puntosDeVida, int energia) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.puntosDeVida = puntosDeVida;
+        this.energia = energia;
+        this.paralizado = false; // Por defecto no está paralizado
+    }
+
+    // Métodos
+    public void atacar(String ataque, PokemonElectrico enemigo) {
+        if (!paralizado) {
+            System.out.println(nombre + " usa " + ataque + " contra " + enemigo.getNombre() + "!");
+            enemigo.recibirDano(10 + nivel); // El daño depende del nivel
+        } else {
+            System.out.println(nombre + " está paralizado y no puede atacar.");
+        }
+    }
+
+    public void recibirDano(int dano) {
+        puntosDeVida -= dano;
+        if (puntosDeVida <= 0) {
+            puntosDeVida = 0;
+            System.out.println(nombre + " ha sido derrotado.");
+        } else {
+            System.out.println(nombre + " ahora tiene " + puntosDeVida + " puntos de vida.");
+        }
+    }
+
+    public void ataqueElectrico(String ataqueEspecial, PokemonElectrico enemigo) {
+        if (!paralizado && energia >= 20) { // Los ataques eléctricos consumen energía
+            System.out.println(nombre + " usa " + ataqueEspecial + "! Es muy efectivo.");
+            enemigo.recibirDano(30 + nivel); // Más daño que un ataque normal
+            energia -= 20; // El ataque especial cuesta energía
+        } else if (energia < 20) {
+            System.out.println(nombre + " no tiene suficiente energía para usar " + ataqueEspecial + ".");
+        } else {
+            System.out.println(nombre + " está paralizado y no puede atacar.");
+        }
+    }
+
+    public void recargarEnergia(int cantidad) {
+        energia += cantidad;
+        System.out.println(nombre + " recarga " + cantidad + " puntos de energía.");
+    }
+
+    public void paralizar(PokemonElectrico enemigo) {
+        System.out.println(nombre + " ha paralizado a " + enemigo.getNombre() + "!");
+        enemigo.setParalizado(true);
+    }
+
+    // Getters y Setters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public int getPuntosDeVida() {
+        return puntosDeVida;
+    }
+
+    public int getEnergia() {
+        return energia;
+    }
+
+    public boolean isParalizado() {
+        return paralizado;
+    }
+
+    public void setParalizado(boolean paralizado) {
+        this.paralizado = paralizado;
+    }
+}
