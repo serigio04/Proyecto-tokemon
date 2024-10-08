@@ -9,7 +9,7 @@ public abstract class Pokemon {
     protected double vida;
     protected double experiencia;
     protected int nivel;
-    double dañoBase;
+    double danioBase = Math.random() * (5 - 1) + 1;
     double xpBase;
 
     public Pokemon (int numPokedex, String nombre, double vida, double experiencia, int nivel){
@@ -61,14 +61,26 @@ public abstract class Pokemon {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-
-    public void atacar(){
+// metodos de la clases
+    public void atacar(Pokemon rival){
+        double critico = Math.random() < 0.1 ? 2 : 1;
         System.out.println(this.nombre + " ataca!");
-        dañoBase = Math.random()*(5-1)+1;
+        double danio = ((this.vida * 0.1) + danioBase) * (nivel * 0.5) * critico;
+        if (critico == 2){
+            System.out.println(this.nombre + " ha hecho un golpe critico");
+        }
+        rival.recibirDanio(danio);
     }
 
-    public void recibirDaño() {
-        this.vida = vida - dañoBase;
+    public void recibirDanio(double danio) {
+        this.vida -= danio;
+        System.out.println(this.nombre + " ha recibido " + danio + " puntos de ataque");
+        if (this.vida <= 0) {
+            this.vida = 0;
+            System.out.println(this.nombre + " ha sido derrotado.");
+        } else {
+            System.out.println(this.nombre + " ahora tiene " + this.vida + " puntos de vida.");
+        }
     }
 
     public void curarse(){
