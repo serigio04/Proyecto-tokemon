@@ -22,3 +22,9 @@ create table pokedex(
     tipo varchar(25) not null,
     descripcion varchar (70)
 );
+
+alter table pokedex 
+add column idPreEvolucion int after numeroPokedex, 
+add column idEvolucion int after idPreEvolucion;
+
+select * from pokemon.pokedex;
